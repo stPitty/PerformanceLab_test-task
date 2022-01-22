@@ -1,3 +1,6 @@
+import sys
+
+
 def is_point_in_circle(filepath_one, filepath_two):
 
     with open(filepath_one, 'r') as file:
@@ -21,6 +24,4 @@ def is_point_in_circle(filepath_one, filepath_two):
 
 
 if __name__ == '__main__':
-    filepath_one = input()
-    filepath_two = input()
-    is_point_in_circle(filepath_one, filepath_two)
+    is_point_in_circle(sys.argv[1], sys.argv[2])

@@ -1,4 +1,4 @@
-import json
+import json, sys
 
 
 def load_json(filepath):
@@ -35,7 +35,5 @@ def make_report(filepath_one, filepath_two):
 
 
 if __name__ == '__main__':
-    filepath_one = input()
-    filepath_two = input()
-    data = make_report(filepath_one, filepath_two)
+    data = make_report(sys.argv[1], sys.argv[2])
     save_json(data)

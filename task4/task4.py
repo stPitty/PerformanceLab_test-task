@@ -1,3 +1,6 @@
+import sys
+
+
 def min_steps(filepath):
     nums = []
     with open(filepath, 'r') as file:
@@ -19,6 +22,5 @@ def min_steps(filepath):
 
 
 if __name__ == '__main__':
-    filepath = input()
-    steps = min_steps(filepath)
+    steps = min_steps(sys.argv[1])
     print(steps, end='\n')
